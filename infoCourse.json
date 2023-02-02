@@ -1,7 +1,7 @@
 {
-  "uuid": "99999999-9999-9999-9999-999999999999",
-  "name": "XC 101",
-  "title": "Example Course",
+  "uuid": "53936D39-231B-496F-A1D8-CD263E38E42F",
+  "name": "CS 61q",
+  "title": "Fake Course",
   "options": {
     "useNewQuestionRenderer": true
   },
