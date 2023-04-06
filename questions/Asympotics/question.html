@@ -1,0 +1,199 @@
+<p>
+  Consider the following function, assume work done by g is ${{params.c}}$. Draw out the recursive tree 
+  and select the valid options.
+</p>
+
+<pl-question-panel>
+<pl-code language="java"> 
+01    void f(int N) {
+02      if (n > {{params.d}}) {
+03        return;
+04      {    
+05      g(N)
+06      f({{params.a}})
+07      f({{params.a}})
+08    }
+</pl-code>
+</pl-question-panel>
+
+
+<pl-question-panel>
+  <p>Identify the line(s) that correspond to the base case(s): </p>
+</pl-question-panel>
+<pl-checkbox answers-name='base-case' partial-credit='true' fixed-order="true">
+  <pl-answer correct='true'>Line 2</pl-answer>
+  <pl-answer correct='true'>Line 3</pl-answer>
+  <pl-answer>Line 5</pl-answer>
+  <pl-answer>Line 6</pl-answer>
+  <pl-answer>Line 7</pl-answer>
+</pl-checkbox>
+<br>
+<pl-question-panel>
+  <p>Identify the line(s) that correspond to the recursive case(s): </p>
+</pl-question-panel>
+<pl-checkbox answers-name='recursive-case' partial-credit='true' fixed-order="true">
+  <pl-answer>Line 2</pl-answer>
+  <pl-answer>Line 3</pl-answer>
+  <pl-answer>Line 5</pl-answer>
+  <pl-answer correct='true'>Line 6</pl-answer>
+  <pl-answer correct='true'>Line 7</pl-answer>
+</pl-checkbox>
+<br>
+<pl-question-panel>
+  <p> Identify the line(s) that corresponds to the "work": </p>
+</pl-question-panel>
+<pl-checkbox answers-name='work' partial-credit='true' fixed-order="true">
+  <pl-answer>Line 2</pl-answer>
+  <pl-answer>Line 3</pl-answer>
+  <pl-answer correct='true'>Line 5</pl-answer>
+  <pl-answer>Line 6</pl-answer>
+  <pl-answer>Line 7</pl-answer>
+</pl-checkbox>
+<br>
+
+<pl-question-panel>
+  <p>Time to draw the recursive tree. Fill in the circle which represent the input size of eaxh node, and input the branching factor work at each node in terms of g(N) Time. </p>
+</pl-question-panel>
+<pl-overlay width="700" height="400" clip="false">
+  <pl-background>
+    <pl-drawing width="700" height="400">
+      <pl-drawing-initial>
+        <pl-circle x1="300" y1="50" radius="50" color="#D0D3D4"></pl-circle>
+        <pl-line x1="280" y1="70" x2="200" y2="150" stroke-color="green"></pl-line>
+        <pl-line x1="320" y1="70" x2="400" y2="150"></pl-line>
+
+        <pl-circle x1="200" y1="150" radius="50" color="#D0D3D4"></pl-circle>
+
+        <pl-circle x1="400" y1="150" radius="50" color="#D0D3D4"></pl-circle>
+        <pl-line x1="200" y1="180" x2="100" y2="250" stroke-color="#00ff00"></pl-line>
+
+        <pl-line x1="400" y1="180" x2="500" y2="250" stroke-color="#00ffff"></pl-line>
+        <pl-circle x1="100" y1="250" radius="50" color="#D0D3D4"></pl-circle>
+        <pl-circle x1="500" y1="250" radius="50" color="#D0D3D4"></pl-circle>
+        
+
+      </pl-drawing-initial>
+    </pl-drawing>
+  </pl-background>
+
+  <pl-location left="290" top="50">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+
+  <pl-location left="200" top="150">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+
+  <pl-location left="400" top="150">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+  
+  <pl-location left="100" top="250">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+
+  <pl-location left="500" top="250">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+
+
+</pl-overlay>
+
+
+
+
+
+<!---
+
+<pl-overlay width="400" height="400" clip="false">
+  <pl-background>
+    <pl-drawing width="398" height="398" hide-answer-panel="false">
+      <pl-drawing-initial>
+        <pl-triangle x1="50" y1="350" x2="350" y2="350" x3="350" y3="50"></pl-triangle>
+      </pl-drawing-initial>
+    </pl-drawing>
+  </pl-background>
+  <pl-location left="200" top="200"> $$3$$ 
+    <pl-figure file-name="fig2.png" directory="clientFilesQuestion"></pl-figure>
+  </pl-location>
+  <pl-location left="375" top="200"> $$3$$ </pl-location>
+  <pl-location left="170" top="170">
+    <pl-number-input
+      answers-name="c"
+      show-help-text="false"
+      show-placeholder="false"
+      size="1"
+    ></pl-number-input>
+  </pl-location>
+</pl-overlay>
+--->
+
+
+
+<!--- Attempt to Draw Tree 
+<pl-overlay width="800" height="800" clip="false">
+    <pl-drawing width="398" height="398" hide-answer-panel="false">
+      <pl-drawing-initial>
+        <pl-circle x1="0" y1="0" radius="30" color="#95A5A6" stroke-width="3"></pl-circle>
+        <pl-line x1="40" y1="330" x2="40" y2="350"></pl-line>
+        <pl-circle x1="40" y1="350" radius="30" color="#95A5A6" stroke-width="3"></pl-circle>
+        <pl-line x1="40" y1="380" x2="40" y2="400"></pl-line>
+        <pl-circle x1="40" y1="400" radius="30" color="#95A5A6" stroke-width="3"></pl-circle>
+      </pl-drawing-initial>
+    </pl-drawing>
+</pl-overlay>
+ /Attempt to Draw Tree --->
+
+
+
+<pl-question-panel>
+    <p>Time to draw the recursive tree. Input the branching factor, and fill in the blanks which represent the work at each node in terms of g(N) Time </p>
+</pl-question-panel>
+<pl-string-input answers-name="string_value" label="Work Done Per Node"></pl-string-input>
+<br>
+<pl-string-input answers-name="string_value" label="Branching Factor"></pl-string-input>
+<!-- is it possible to have a responsive image generator that changes the tree and # of blanks based of the inputed branching factor -->
+<br>
+<pl-question-panel>
+  <p>
+    Which of the following "sums" can you identify? </p>
+    <pl-checkbox answers-name='sums' partial-credit='true' fixed-order="true">
+      <pl-answer>Arithmetic Sum (i.e. $1 + 2 + 3 + ... + N \approx N^2$)</pl-answer>
+      <pl-answer correct='true'>Geometric Sum (i.e. $1 + 2 + 4 + ... + N \approx N$)</pl-answer>
+      <pl-answer>Constant Sum (i.e. $N + N + N + ... + N \approx N^2$)</pl-answer>
+    </pl-checkbox>
+
+</pl-question-panel>
+<br>
+<pl-question-panel>
+  <p>
+    Finally, enter the valid bound.
+  </p>
+  <pl-big-o-input type="theta" answers-name="ans" variable="n" correct-answer="n**2" size="10"></pl-big-o-input>
+</pl-question-panel>
+
