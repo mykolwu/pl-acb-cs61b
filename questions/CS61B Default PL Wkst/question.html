@@ -89,7 +89,7 @@
         G -> N
         G -> O
         
-        node [shape=record];
+        node [shape=record  size="0.1!"];
         struct1 [label="10"];
         struct2 [label="5"];
         struct3 [label="7"];
@@ -131,21 +131,48 @@
         O -> struct15
         O -> struct16}
     </pl-graph>
-    <pl-string-input answers-name="trie1" label="a"></pl-string-input>
-    <pl-string-input answers-name="trie2" label="b"></pl-string-input>
-    <pl-string-input answers-name="trie3" label="c"></pl-string-input>
-    <pl-string-input answers-name="trie4" label="d"></pl-string-input>
-    <pl-string-input answers-name="trie5" label="e"></pl-string-input>
-    <pl-string-input answers-name="trie6" label="f"></pl-string-input>
-    <pl-string-input answers-name="trie7" label="g"></pl-string-input>
-    <pl-string-input answers-name="trie8" label="h"></pl-string-input>
-    <pl-string-input answers-name="trie9" label="i"></pl-string-input>
-    <pl-string-input answers-name="trie10" label="j"></pl-string-input>
-    <pl-string-input answers-name="trie11" label="k"></pl-string-input>
-    <pl-string-input answers-name="trie12" label="l"></pl-string-input>
-    <pl-string-input answers-name="trie13" label="m"></pl-string-input>
-    <pl-string-input answers-name="trie14" label="n"></pl-string-input>
-    <pl-string-input answers-name="trie15" label="o"></pl-string-input>
+    <pl-question-panel>
+        <p>
+            Indicate the value of each of the nodes a–o by filling in the value in each row. 
+        </p>
+    </pl-question-panel>
+    <pl-integer-input answers-name="gametreeA" label="a"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeB" label="b"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeC" label="c"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeD" label="d"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeE" label="e"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeF" label="f"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeG" label="g"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeH" label="h"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeI" label="i"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeJ" label="j"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeK" label="k"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeL" label="l"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeM" label="m"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeN" label="n"></pl-integer-input>
+    <pl-integer-input answers-name="gametreeO" label="o"></pl-integer-input>
+    <pl-question-panel>
+        <p>
+            Fill in the boxes of all edges (A–P) that would be pruned by alpha-beta pruning.
+        </p>
+    </pl-question-panel>
+    <pl-checkbox answers-name="gametree" weight="1">
+        <pl-answer>A</pl-answer>
+        <pl-answer>B</pl-answer>
+        <pl-answer>C</pl-answer>
+        <pl-answer>D</pl-answer>
+        <pl-answer>E</pl-answer>
+        <pl-answer>F</pl-answer>
+        <pl-answer>G</pl-answer>
+        <pl-answer>H</pl-answer>
+        <pl-answer>I</pl-answer>
+        <pl-answer correct="true">J</pl-answer>
+        <pl-answer>K</pl-answer>
+        <pl-answer>L</pl-answer>
+        <pl-answer>M</pl-answer>
+        <pl-answer>N</pl-answer>
+    </pl-checkbox>
+
     </div>
 </div>
 
