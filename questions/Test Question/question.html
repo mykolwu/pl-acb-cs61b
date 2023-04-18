@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <pl-question-panel>
   <p>This question was created to show the graph rendering capabilities of the <a href="https://prairielearn.readthedocs.io/en/latest/elements/#pl-graph"><code>pl-graph</code></a> element.</p>
 </pl-question-panel>
@@ -174,3 +175,107 @@ data['params']['random-graph'] = pl.to_json(random_graph)
       <pl-graph params-type="networkx" params-name="color-graph"></pl-graph>
   </div>
 </div>
+=======
+<div class="card my-2">
+  <div class="card-body">
+
+    <p>
+      In the partial game tree below, we represent maximizing nodes as △; minimizing nodes ▽. 
+      Determine the values for the nodes that would be determined by the minimax algorithm 
+      without pruning, and indicate which edges would not be traversed (would be pruned) 
+      as a result of alpha-beta pruning. Assume we evaluate the children of a node from 
+      left to right, and that all values are integers.
+    </p>
+
+          
+    <pl-graph params-name="matrix" weights="false"></pl-graph>
+
+    <!-- This is the code for the alpha-beta tree that requires scrolling -->
+    <pl-graph>
+      digraph G {
+
+  
+        A [shape=triangle];
+        B [shape=invtriangle];
+        C [shape=invtriangle];
+        
+        A -> B
+        A -> C
+      
+        D [shape=triangle];
+        E [shape=triangle];
+        F [shape=triangle];
+        G [shape=triangle];
+      
+        B -> D
+        B -> E
+        C -> F
+        C -> G
+        
+        H [shape=invtriangle];
+        I [shape=invtriangle];
+        J [shape=invtriangle];
+        K [shape=invtriangle];
+        L [shape=invtriangle];
+        M [shape=invtriangle];
+        N [shape=invtriangle];
+        O [shape=invtriangle];
+      
+        
+        D -> H
+        D -> I
+        E -> J
+        E -> K
+        F -> L
+        F -> M
+        G -> N
+        G -> O
+        
+        node [shape=record];
+        struct1 [label="10"];
+        struct2 [label="5"];
+        struct3 [label="7"];
+        struct4 [label="11"];
+        struct5 [label="12"];
+        struct6 [label="8"];
+        struct7 [label="9"];
+        struct8 [label="8"];
+        struct9 [label="5"];
+        struct10 [label="12"];
+        struct11 [label="11"];
+        struct12 [label="12"];
+        struct13 [label="9"];
+        struct14 [label="8"];
+        struct15 [label="7"];
+        struct16 [label="10"];
+      
+        H -> struct1
+        H -> struct2
+        
+        I -> struct3
+        I -> struct4
+      
+        J -> struct5
+        J -> struct6
+      
+        K -> struct7
+        K -> struct8
+      
+        L -> struct9
+        L -> struct10
+      
+        M -> struct11
+        M -> struct12
+      
+        N -> struct13
+        N -> struct14
+      
+        O -> struct15
+        O -> struct16}
+    </pl-graph>
+
+    </pl-overlay>
+
+  </div>
+</div>
+>>>>>>> 4f251e50f25a7bd0f0006b6ea4ea686b7b6cb62a
