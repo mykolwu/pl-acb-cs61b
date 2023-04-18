@@ -3,6 +3,12 @@ import numpy as np
 import networkx as nx
 import random
 
+import itertools
+import random
+import string
+import numpy.linalg as la
+
+
 pos = {}
 
 def returnGraph():
@@ -51,5 +57,5 @@ def getPos(data, inputList, Graph ,defaultProg="dot"):
 def generate(data):
     getPos(data, [0, 1], returnGraph())
 
-
-
+    random_graph = nx.gnm_random_graph(5, 6)
+    
