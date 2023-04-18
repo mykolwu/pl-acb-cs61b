@@ -7,7 +7,7 @@ import numpy as np
 import numpy.linalg as la
 import prairielearn as pl
 
-
+ 
 def generate(data):
     data["correct_answers"]["DFSPreorder"] = "9-0-1-6-5-2-7"
     data["correct_answers"]["DFSPostorder"] = "0-2-7-5-6-1-9"
@@ -46,3 +46,16 @@ def generate(data):
     data["correct_answers"]["ab14"] = "N/A"
     data["correct_answers"]["ab15"] = "N/A"
     data["correct_answers"]["ab16"] = "N/A"
+
+    data["correct_answers"]["gametreeA"] = "U"
+    data["correct_answers"]["gametreeB"] = "U"
+    data["correct_answers"]["gametreeC"] = "U"
+    data["correct_answers"]["gametreeD"] = "U"
+    data["correct_answers"]["gametreeE"] = "U"
+    data["correct_answers"]["gametreeF"] = "U"
+    data["correct_answers"]["gametreeG"] = "U"
+    data["correct_answers"]["gametreeH"] = "U"
+    data["correct_answers"]["gametreeI"] = "U"
+    data["correct_answers"]["gametreeJ"] = "U"
+    data["correct_answers"]["gametreeK"] = "U"
+    data["correct_answers"]["gametreeL"] = "U"
